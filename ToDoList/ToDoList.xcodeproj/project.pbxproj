@@ -18,6 +18,13 @@
 		6C583C1328F316F100DA3114 /* ToDoListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C1228F316F100DA3114 /* ToDoListTests.swift */; };
 		6C583C1D28F316F100DA3114 /* ToDoListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C1C28F316F100DA3114 /* ToDoListUITests.swift */; };
 		6C583C1F28F316F100DA3114 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C1E28F316F100DA3114 /* ToDoListUITestsLaunchTests.swift */; };
+		6C583C3028F3237700DA3114 /* InitialTasksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C583C2F28F3237700DA3114 /* InitialTasksViewController.storyboard */; };
+		6C583C3228F3358400DA3114 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C3128F3358400DA3114 /* LoginViewController.swift */; };
+		6C583C3428F335B600DA3114 /* ListTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C3328F335B600DA3114 /* ListTaskViewController.swift */; };
+		6C583C3628F3362D00DA3114 /* TaskManagerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C3528F3362D00DA3114 /* TaskManagerTableViewController.swift */; };
+		6C583C3A28F347DB00DA3114 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C3828F347DB00DA3114 /* EmptyTableViewCell.swift */; };
+		6C583C3B28F347DB00DA3114 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C583C3928F347DB00DA3114 /* EmptyTableViewCell.xib */; };
+		6CF1F14528F355EA00BD3310 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F14428F355EA00BD3310 /* TaskTableViewCell.swift */; };
 		B0984A7622D52470392A095D /* Pods_ToDoList_ToDoListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71057E92DDEB2F6A7FF9B786 /* Pods_ToDoList_ToDoListUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +64,13 @@
 		6C583C1828F316F100DA3114 /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C583C1C28F316F100DA3114 /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		6C583C1E28F316F100DA3114 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6C583C2F28F3237700DA3114 /* InitialTasksViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InitialTasksViewController.storyboard; sourceTree = "<group>"; };
+		6C583C3128F3358400DA3114 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6C583C3328F335B600DA3114 /* ListTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTaskViewController.swift; sourceTree = "<group>"; };
+		6C583C3528F3362D00DA3114 /* TaskManagerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTableViewController.swift; sourceTree = "<group>"; };
+		6C583C3828F347DB00DA3114 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		6C583C3928F347DB00DA3114 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
+		6CF1F14428F355EA00BD3310 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		71057E92DDEB2F6A7FF9B786 /* Pods_ToDoList_ToDoListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoList_ToDoListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55404468B86B00D6CE96514 /* Pods-ToDoList-ToDoListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList-ToDoListUITests.debug.xcconfig"; path = "Target Support Files/Pods-ToDoList-ToDoListUITests/Pods-ToDoList-ToDoListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E483919CE212D400D13A051E /* Pods-ToDoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList.debug.xcconfig"; path = "Target Support Files/Pods-ToDoList/Pods-ToDoList.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +125,6 @@
 				10D0574FB3EB2BC38847830E /* Pods-ToDoListTests.debug.xcconfig */,
 				2030FAD0115E4D4FF27D5144 /* Pods-ToDoListTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -179,6 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				6C583BFF28F316F000DA3114 /* ViewController.swift */,
+				6C583C3128F3358400DA3114 /* LoginViewController.swift */,
+				6C583C3328F335B600DA3114 /* ListTaskViewController.swift */,
+				6C583C3528F3362D00DA3114 /* TaskManagerTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,9 +211,21 @@
 		6C583C2E28F31A9100DA3114 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6C583C3728F3479B00DA3114 /* Cell */,
 				6C583C0128F316F000DA3114 /* Main.storyboard */,
+				6C583C2F28F3237700DA3114 /* InitialTasksViewController.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6C583C3728F3479B00DA3114 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6C583C3828F347DB00DA3114 /* EmptyTableViewCell.swift */,
+				6C583C3928F347DB00DA3114 /* EmptyTableViewCell.xib */,
+				6CF1F14428F355EA00BD3310 /* TaskTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,8 +338,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C583C0828F316F100DA3114 /* LaunchScreen.storyboard in Resources */,
+				6C583C3B28F347DB00DA3114 /* EmptyTableViewCell.xib in Resources */,
 				6C583C0528F316F100DA3114 /* Assets.xcassets in Resources */,
 				6C583C0328F316F000DA3114 /* Main.storyboard in Resources */,
+				6C583C3028F3237700DA3114 /* InitialTasksViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,8 +469,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF1F14528F355EA00BD3310 /* TaskTableViewCell.swift in Sources */,
+				6C583C3228F3358400DA3114 /* LoginViewController.swift in Sources */,
 				6C583C0028F316F000DA3114 /* ViewController.swift in Sources */,
 				6C583BFC28F316F000DA3114 /* AppDelegate.swift in Sources */,
+				6C583C3428F335B600DA3114 /* ListTaskViewController.swift in Sources */,
+				6C583C3628F3362D00DA3114 /* TaskManagerTableViewController.swift in Sources */,
+				6C583C3A28F347DB00DA3114 /* EmptyTableViewCell.swift in Sources */,
 				6C583BFE28F316F000DA3114 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
