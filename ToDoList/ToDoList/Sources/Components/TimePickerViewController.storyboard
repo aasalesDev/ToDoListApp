@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Time Picker View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="TimePickerViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VJI-FO-qDU">
+                                <rect key="frame" x="0.0" y="580" width="390" height="264"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNj-YN-wKh">
+                                        <rect key="frame" x="330" y="10" width="50" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="VCj-go-vea"/>
+                                            <constraint firstAttribute="height" constant="50" id="tMd-gu-OdF"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="OK"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="tfp-8C-WKZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BcZ-KA-TOv">
+                                        <rect key="frame" x="10" y="10" width="80" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3dl-oi-TTB"/>
+                                            <constraint firstAttribute="width" constant="80" id="poV-nB-Smy"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cancel"/>
+                                        <connections>
+                                            <action selector="buttonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="98c-Lb-FrV"/>
+                                        </connections>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="R10-PC-Pnf">
+                                        <rect key="frame" x="0.0" y="110" width="390" height="112"/>
+                                        <locale key="locale" localeIdentifier="en_US"/>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="R10-PC-Pnf" firstAttribute="top" secondItem="RNj-YN-wKh" secondAttribute="bottom" constant="50" id="AZV-Ot-PTg"/>
+                                    <constraint firstItem="R10-PC-Pnf" firstAttribute="bottom" secondItem="VJI-FO-qDU" secondAttribute="bottomMargin" id="Cyb-To-tVf"/>
+                                    <constraint firstAttribute="trailing" secondItem="R10-PC-Pnf" secondAttribute="trailing" id="Mkg-Mc-yrA"/>
+                                    <constraint firstAttribute="trailing" secondItem="RNj-YN-wKh" secondAttribute="trailing" constant="10" id="U0T-2L-OGx"/>
+                                    <constraint firstItem="RNj-YN-wKh" firstAttribute="top" secondItem="VJI-FO-qDU" secondAttribute="top" constant="10" id="beD-aN-NRp"/>
+                                    <constraint firstItem="BcZ-KA-TOv" firstAttribute="top" secondItem="VJI-FO-qDU" secondAttribute="top" constant="10" id="goB-nq-BQm"/>
+                                    <constraint firstItem="BcZ-KA-TOv" firstAttribute="leading" secondItem="VJI-FO-qDU" secondAttribute="leading" constant="10" id="krP-SJ-GdY"/>
+                                    <constraint firstItem="R10-PC-Pnf" firstAttribute="leading" secondItem="VJI-FO-qDU" secondAttribute="leading" id="nBq-S9-1nq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="VJI-FO-qDU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="533" id="1qo-u5-jgy"/>
+                            <constraint firstAttribute="bottom" secondItem="VJI-FO-qDU" secondAttribute="bottom" id="a0e-KF-VOR"/>
+                            <constraint firstItem="VJI-FO-qDU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="hcN-5r-90f"/>
+                            <constraint firstItem="VJI-FO-qDU" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="ksR-rz-wGq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="BcZ-KA-TOv" id="TSx-Py-boG"/>
+                        <outlet property="datePicker" destination="R10-PC-Pnf" id="Qhg-sa-yCQ"/>
+                        <outlet property="okButton" destination="RNj-YN-wKh" id="2Go-5i-pgS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="-34.123222748815166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

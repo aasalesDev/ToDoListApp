@@ -24,7 +24,12 @@
 		6C583C3628F3362D00DA3114 /* TaskManagerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C3528F3362D00DA3114 /* TaskManagerTableViewController.swift */; };
 		6C583C3A28F347DB00DA3114 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C3828F347DB00DA3114 /* EmptyTableViewCell.swift */; };
 		6C583C3B28F347DB00DA3114 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C583C3928F347DB00DA3114 /* EmptyTableViewCell.xib */; };
+		6C6352C128F3978F00B3F6E4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6352C028F3978F00B3F6E4 /* Date.swift */; };
+		6C6352C328F39F6B00B3F6E4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6352C228F39F6B00B3F6E4 /* Task.swift */; };
+		6C6352C628F3A04500B3F6E4 /* DefaultTaskHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6352C528F3A04500B3F6E4 /* DefaultTaskHelper.swift */; };
 		6CF1F14528F355EA00BD3310 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F14428F355EA00BD3310 /* TaskTableViewCell.swift */; };
+		6CF1F14828F381DF00BD3310 /* TimePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF1F14728F381DF00BD3310 /* TimePickerViewController.storyboard */; };
+		6CF1F14A28F3820000BD3310 /* TimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F14928F3820000BD3310 /* TimePickerViewController.swift */; };
 		B0984A7622D52470392A095D /* Pods_ToDoList_ToDoListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71057E92DDEB2F6A7FF9B786 /* Pods_ToDoList_ToDoListUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,7 +75,12 @@
 		6C583C3528F3362D00DA3114 /* TaskManagerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskManagerTableViewController.swift; sourceTree = "<group>"; };
 		6C583C3828F347DB00DA3114 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
 		6C583C3928F347DB00DA3114 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
+		6C6352C028F3978F00B3F6E4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		6C6352C228F39F6B00B3F6E4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		6C6352C528F3A04500B3F6E4 /* DefaultTaskHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTaskHelper.swift; sourceTree = "<group>"; };
 		6CF1F14428F355EA00BD3310 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		6CF1F14728F381DF00BD3310 /* TimePickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimePickerViewController.storyboard; sourceTree = "<group>"; };
+		6CF1F14928F3820000BD3310 /* TimePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerViewController.swift; sourceTree = "<group>"; };
 		71057E92DDEB2F6A7FF9B786 /* Pods_ToDoList_ToDoListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoList_ToDoListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55404468B86B00D6CE96514 /* Pods-ToDoList-ToDoListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList-ToDoListUITests.debug.xcconfig"; path = "Target Support Files/Pods-ToDoList-ToDoListUITests/Pods-ToDoList-ToDoListUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E483919CE212D400D13A051E /* Pods-ToDoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoList.debug.xcconfig"; path = "Target Support Files/Pods-ToDoList/Pods-ToDoList.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +191,9 @@
 		6C583C2B28F31A7200DA3114 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				6C6352C428F3A00C00B3F6E4 /* Support */,
+				6C6352BF28F3977300B3F6E4 /* Extensions */,
+				6CF1F14628F381A100BD3310 /* Components */,
 				6C583C2D28F31A8A00DA3114 /* Model */,
 				6C583C2E28F31A9100DA3114 /* View */,
 				6C583C2C28F31A7B00DA3114 /* Controller */,
@@ -204,6 +217,7 @@
 			children = (
 				6C583BFD28F316F000DA3114 /* SceneDelegate.swift */,
 				6C583BFB28F316F000DA3114 /* AppDelegate.swift */,
+				6C6352C228F39F6B00B3F6E4 /* Task.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +240,31 @@
 				6CF1F14428F355EA00BD3310 /* TaskTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		6C6352BF28F3977300B3F6E4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6C6352C028F3978F00B3F6E4 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6C6352C428F3A00C00B3F6E4 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				6C6352C528F3A04500B3F6E4 /* DefaultTaskHelper.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		6CF1F14628F381A100BD3310 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6CF1F14728F381DF00BD3310 /* TimePickerViewController.storyboard */,
+				6CF1F14928F3820000BD3310 /* TimePickerViewController.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,6 +378,7 @@
 			files = (
 				6C583C0828F316F100DA3114 /* LaunchScreen.storyboard in Resources */,
 				6C583C3B28F347DB00DA3114 /* EmptyTableViewCell.xib in Resources */,
+				6CF1F14828F381DF00BD3310 /* TimePickerViewController.storyboard in Resources */,
 				6C583C0528F316F100DA3114 /* Assets.xcassets in Resources */,
 				6C583C0328F316F000DA3114 /* Main.storyboard in Resources */,
 				6C583C3028F3237700DA3114 /* InitialTasksViewController.storyboard in Resources */,
@@ -470,9 +510,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CF1F14528F355EA00BD3310 /* TaskTableViewCell.swift in Sources */,
+				6C6352C128F3978F00B3F6E4 /* Date.swift in Sources */,
 				6C583C3228F3358400DA3114 /* LoginViewController.swift in Sources */,
 				6C583C0028F316F000DA3114 /* ViewController.swift in Sources */,
+				6C6352C328F39F6B00B3F6E4 /* Task.swift in Sources */,
 				6C583BFC28F316F000DA3114 /* AppDelegate.swift in Sources */,
+				6C6352C628F3A04500B3F6E4 /* DefaultTaskHelper.swift in Sources */,
+				6CF1F14A28F3820000BD3310 /* TimePickerViewController.swift in Sources */,
 				6C583C3428F335B600DA3114 /* ListTaskViewController.swift in Sources */,
 				6C583C3628F3362D00DA3114 /* TaskManagerTableViewController.swift in Sources */,
 				6C583C3A28F347DB00DA3114 /* EmptyTableViewCell.swift in Sources */,
