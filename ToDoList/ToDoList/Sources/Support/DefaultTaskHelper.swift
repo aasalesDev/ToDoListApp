@@ -11,7 +11,7 @@ class DefaultTaskHelper {
     
     let keyTask: String = "keyTask"
     
-    public func saveTaskList(list: [Task]){
+    public func saveTaskList(list: [MyTask]){
         do {
             let auxiliaryList = try JSONEncoder().encode(list)
             UserDefaults.standard.set(auxiliaryList, forKey: self.keyTask)
@@ -20,10 +20,10 @@ class DefaultTaskHelper {
         }
     }
     
-    public func getTaskList() -> [Task]{
+    public func getTaskList() -> [MyTask]{
         do {
             guard let list = UserDefaults.standard.object(forKey: self.keyTask) else { return [] }
-            let auxiliaryList = try JSONDecoder().decode([Task].self, from: list as! Data)
+            let auxiliaryList = try JSONDecoder().decode([MyTask].self, from: list as! Data)
             return auxiliaryList
         }catch {
             print(error)

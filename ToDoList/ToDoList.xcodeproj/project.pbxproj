@@ -25,7 +25,7 @@
 		6C583C3A28F347DB00DA3114 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C583C3828F347DB00DA3114 /* EmptyTableViewCell.swift */; };
 		6C583C3B28F347DB00DA3114 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C583C3928F347DB00DA3114 /* EmptyTableViewCell.xib */; };
 		6C6352C128F3978F00B3F6E4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6352C028F3978F00B3F6E4 /* Date.swift */; };
-		6C6352C328F39F6B00B3F6E4 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6352C228F39F6B00B3F6E4 /* Task.swift */; };
+		6C6352C328F39F6B00B3F6E4 /* MyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6352C228F39F6B00B3F6E4 /* MyTask.swift */; };
 		6C6352C628F3A04500B3F6E4 /* DefaultTaskHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6352C528F3A04500B3F6E4 /* DefaultTaskHelper.swift */; };
 		6CF1F14528F355EA00BD3310 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF1F14428F355EA00BD3310 /* TaskTableViewCell.swift */; };
 		6CF1F14828F381DF00BD3310 /* TimePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CF1F14728F381DF00BD3310 /* TimePickerViewController.storyboard */; };
@@ -76,7 +76,7 @@
 		6C583C3828F347DB00DA3114 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
 		6C583C3928F347DB00DA3114 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		6C6352C028F3978F00B3F6E4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		6C6352C228F39F6B00B3F6E4 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		6C6352C228F39F6B00B3F6E4 /* MyTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTask.swift; sourceTree = "<group>"; };
 		6C6352C528F3A04500B3F6E4 /* DefaultTaskHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultTaskHelper.swift; sourceTree = "<group>"; };
 		6CF1F14428F355EA00BD3310 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		6CF1F14728F381DF00BD3310 /* TimePickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimePickerViewController.storyboard; sourceTree = "<group>"; };
@@ -217,7 +217,7 @@
 			children = (
 				6C583BFD28F316F000DA3114 /* SceneDelegate.swift */,
 				6C583BFB28F316F000DA3114 /* AppDelegate.swift */,
-				6C6352C228F39F6B00B3F6E4 /* Task.swift */,
+				6C6352C228F39F6B00B3F6E4 /* MyTask.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -513,7 +513,7 @@
 				6C6352C128F3978F00B3F6E4 /* Date.swift in Sources */,
 				6C583C3228F3358400DA3114 /* LoginViewController.swift in Sources */,
 				6C583C0028F316F000DA3114 /* ViewController.swift in Sources */,
-				6C6352C328F39F6B00B3F6E4 /* Task.swift in Sources */,
+				6C6352C328F39F6B00B3F6E4 /* MyTask.swift in Sources */,
 				6C583BFC28F316F000DA3114 /* AppDelegate.swift in Sources */,
 				6C6352C628F3A04500B3F6E4 /* DefaultTaskHelper.swift in Sources */,
 				6CF1F14A28F3820000BD3310 /* TimePickerViewController.swift in Sources */,

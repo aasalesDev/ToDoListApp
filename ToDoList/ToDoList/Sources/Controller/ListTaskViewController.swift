@@ -14,7 +14,7 @@ class ListTaskViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     //MARK: Var/Lets
-    private var list: [Task] = []
+    private var list: [MyTask] = []
     
     //MARK: Life cycle
     override func viewDidLoad() {
@@ -46,6 +46,7 @@ class ListTaskViewController: UIViewController {
 
 //MARK: UITableViewDelegate, UITableViewDataSource
 extension ListTaskViewController: UITableViewDelegate, UITableViewDataSource {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.list.count > 0 ? self.list.count : 1
     }

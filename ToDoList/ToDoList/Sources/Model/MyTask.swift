@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Task: Codable {
+class MyTask: Codable {
     var id: Int
     var description: String
     var time: String

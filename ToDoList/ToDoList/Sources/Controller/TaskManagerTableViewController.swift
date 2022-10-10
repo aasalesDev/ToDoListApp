@@ -49,8 +49,8 @@ class TaskManagerTableViewController: UITableViewController {
     
     //MARK: Func
     private func createTask(){
-        var list: [Task] = DefaultTaskHelper().getTaskList()
-        let task: Task = Task(id: list.count+1, description: self.taskDescriptionTextField.text ?? "No Description", time: self.time, date: self.date)
+        var list: [MyTask] = DefaultTaskHelper().getTaskList()
+        let task: MyTask = MyTask(id: list.count+1, description: self.taskDescriptionTextField.text ?? "No Description", time: self.time, date: self.date)
         list.append(task)
         DefaultTaskHelper().saveTaskList(list: list)
         self.dismiss(animated: true)

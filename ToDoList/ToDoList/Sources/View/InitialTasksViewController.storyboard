@@ -114,8 +114,8 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHr-rI-tDJ">
-                                                    <rect key="frame" x="10" y="101" width="360" height="9"/>
-                                                    <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                    <rect key="frame" x="10" y="135.00000000000057" width="360" height="5"/>
+                                                    <color key="backgroundColor" systemColor="systemMintColor"/>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -124,8 +124,8 @@
                                                 <constraint firstItem="o01-l0-NO3" firstAttribute="leading" secondItem="mxn-E3-8RS" secondAttribute="leading" constant="10" id="Ekb-T2-4Yl"/>
                                                 <constraint firstItem="o01-l0-NO3" firstAttribute="top" secondItem="bVd-CL-g4D" secondAttribute="bottom" constant="20" id="PIZ-kL-zNa"/>
                                                 <constraint firstAttribute="bottom" secondItem="o01-l0-NO3" secondAttribute="bottom" constant="50" id="PRO-qT-GTW"/>
-                                                <constraint firstItem="qHr-rI-tDJ" firstAttribute="top" secondItem="o01-l0-NO3" secondAttribute="bottom" constant="10" id="R6n-tm-iAj"/>
-                                                <constraint firstItem="qHr-rI-tDJ" firstAttribute="bottom" secondItem="mxn-E3-8RS" secondAttribute="bottomMargin" constant="-20" id="b5z-Ze-tqW"/>
+                                                <constraint firstItem="qHr-rI-tDJ" firstAttribute="top" secondItem="o01-l0-NO3" secondAttribute="bottom" constant="44.000000000000568" id="R6n-tm-iAj"/>
+                                                <constraint firstItem="qHr-rI-tDJ" firstAttribute="bottom" secondItem="mxn-E3-8RS" secondAttribute="bottomMargin" constant="10.000000000000568" id="b5z-Ze-tqW"/>
                                                 <constraint firstItem="6ML-pM-PSt" firstAttribute="leading" secondItem="bVd-CL-g4D" secondAttribute="trailing" constant="63.000000000000085" id="dHQ-KM-ymY"/>
                                                 <constraint firstItem="nWR-Qj-zRR" firstAttribute="top" secondItem="6ML-pM-PSt" secondAttribute="bottom" constant="45.333333333333329" id="efu-hv-94S"/>
                                                 <constraint firstItem="bVd-CL-g4D" firstAttribute="leading" secondItem="mxn-E3-8RS" secondAttribute="leading" constant="10" id="kOy-Id-nej"/>
@@ -137,9 +137,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="dateLabel" destination="vBz-m5-XdM" id="lQ3-7u-DOK"/>
-                                            <outlet property="descriptionLabel" destination="Mnh-h5-5Hq" id="Rsc-zL-4Qq"/>
-                                            <outlet property="timeLabel" destination="kcR-W3-whZ" id="RgC-aV-agw"/>
+                                            <outlet property="dateLabel" destination="vBz-m5-XdM" id="UQ2-X5-RHh"/>
+                                            <outlet property="descriptionLabel" destination="Mnh-h5-5Hq" id="RQv-yG-qaf"/>
+                                            <outlet property="timeLabel" destination="kcR-W3-whZ" id="O5x-ZC-eCC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -288,7 +288,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smM-KM-Yi6">
-                                                    <rect key="frame" x="226" y="0.0" width="139" height="35"/>
+                                                    <rect key="frame" x="126" y="0.0" width="139" height="35"/>
                                                     <color key="backgroundColor" systemColor="systemGray3Color"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="139" id="nEs-vb-Nun"/>
@@ -301,7 +301,7 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="smM-KM-Yi6" secondAttribute="trailing" constant="5" id="7iu-Kx-rNW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="smM-KM-Yi6" secondAttribute="trailing" constant="105" id="7iu-Kx-rNW"/>
                                                 <constraint firstItem="smM-KM-Yi6" firstAttribute="top" secondItem="ayI-07-dJl" secondAttribute="top" id="9SB-Mf-E1i"/>
                                                 <constraint firstItem="AsD-T9-GfQ" firstAttribute="top" secondItem="ayI-07-dJl" secondAttribute="topMargin" id="Vlz-wm-5QA"/>
                                                 <constraint firstItem="AsD-T9-GfQ" firstAttribute="leading" secondItem="ayI-07-dJl" secondAttribute="leadingMargin" id="fr2-hC-u0e"/>
@@ -396,9 +396,6 @@
         </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
