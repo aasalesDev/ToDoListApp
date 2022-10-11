@@ -28,6 +28,13 @@ class ListTaskViewController: UIViewController {
         self.loadListItens()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let controller = segue.destination as? TaskManagerTableViewController {
+            guard let task = sender as? MyTask? else {return}
+            controller.task = task
+        }
+    }
+    
     //MARK: Private/Public Func
     private func registerNib(){
         self.tableView.register(UINib(nibName: "EmptyTableViewCell", bundle: nil), forCellReuseIdentifier: "emptyTableCell")
@@ -38,9 +45,13 @@ class ListTaskViewController: UIViewController {
         self.tableView.reloadData()
     }
     
+    private func callCreateTask(task: MyTask?){
+        self.performSegue(withIdentifier: "createNewTask", sender: nil)
+    }
+    
     //MARK: Action
     @IBAction func addTaskButtonTapped(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "createNewTask", sender: nil)
+        self.callCreateTask(task: nil)
     }
 }
 
@@ -54,6 +65,10 @@ extension ListTaskViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if self.list.count > 0 {
             let cell: TaskTableViewCell = tableView.dequeueReusableCell(withIdentifier: "callCellTasklist", for: indexPath) as! TaskTableViewCell
+            let task: MyTask = self.list[indexPath.row]
+            cell.setTime(time: task.time)
+            cell.setDate(date: task.date)
+            cell.setDescription(description: task.description)
             return cell
         } else {
             let cell: EmptyTableViewCell = tableView.dequeueReusableCell(withIdentifier: "emptyTableCell", for: indexPath) as! EmptyTableViewCell
@@ -67,9 +82,9 @@ extension ListTaskViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if self.list.count > 0 {
-            
+            self.callCreateTask(task: self.list[indexPath.row])
         } else {
-            self.performSegue(withIdentifier: "createNewTask", sender: nil)
+            self.callCreateTask(task: nil)
         }
     }
     

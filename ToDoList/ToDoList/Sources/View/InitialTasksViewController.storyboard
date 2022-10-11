@@ -114,7 +114,7 @@
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qHr-rI-tDJ">
-                                                    <rect key="frame" x="10" y="135.00000000000057" width="360" height="5"/>
+                                                    <rect key="frame" x="10" y="135" width="360" height="5"/>
                                                     <color key="backgroundColor" systemColor="systemMintColor"/>
                                                 </view>
                                             </subviews>
@@ -368,6 +368,7 @@
                     <navigationItem key="navigationItem" id="PDO-ms-Ja4"/>
                     <connections>
                         <outlet property="calendar" destination="ISn-mY-5f8" id="8Ua-Ie-AGc"/>
+                        <outlet property="deleteButton" destination="20q-hH-hnh" id="eDQ-dj-8Zp"/>
                         <outlet property="taskDescriptionTextField" destination="yqA-CK-Mkv" id="Dfi-LQ-HQu"/>
                         <outlet property="timeButton" destination="smM-KM-Yi6" id="agG-eZ-Pr7"/>
                         <segue destination="hJG-E1-jNS" kind="presentation" identifier="callTimePicker" modalPresentationStyle="overFullScreen" id="cX0-c4-IYS"/>

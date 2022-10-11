@@ -14,15 +14,18 @@ class TaskManagerTableViewController: UITableViewController {
     @IBOutlet weak var taskDescriptionTextField: UITextField!
     @IBOutlet weak var calendar: FSCalendar!
     @IBOutlet weak var timeButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
     //MARK: Var/Let
-    var time: String = ""
-    var date: String = ""
+    private var time: String = ""
+    private var date: String = ""
+    public var task: MyTask?
     
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.calendar.delegate = self
+        self.configView()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -48,6 +51,14 @@ class TaskManagerTableViewController: UITableViewController {
     }
     
     //MARK: Func
+    
+    private func configView(){
+        self.deleteButton.isHidden = self.task == nil
+        //stopped at min 27
+    }
+    
+    
+    
     private func createTask(){
         var list: [MyTask] = DefaultTaskHelper().getTaskList()
         let task: MyTask = MyTask(id: list.count+1, description: self.taskDescriptionTextField.text ?? "No Description", time: self.time, date: self.date)
